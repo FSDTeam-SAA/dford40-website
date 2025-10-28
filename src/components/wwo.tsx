@@ -50,7 +50,7 @@ export default function Wwo() {
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-4">
               What We Offer
             </h2>
             <div className="flex justify-center">
@@ -75,12 +75,12 @@ export default function Wwo() {
                 {/* Content Container */}
                 <div className="flex flex-col flex-grow">
                   {/* Title */}
-                  <h3 className="text-xl md:text-2xl font-bold text-foreground mb-4">
+                  <h3 className="text-xl md:text-2xl font-bold text-black mb-4">
                     {service.title}
                   </h3>
 
                   {/* Description */}
-                  <p className="text-sm md:text-base text-foreground/80 mb-6 leading-relaxed">
+                  <p className="text-sm md:text-base text-black/80 mb-6 leading-relaxed">
                     {service.description}
                   </p>
 
@@ -89,7 +89,7 @@ export default function Wwo() {
                     {service.items.map((item, itemIndex) => (
                       <li
                         key={itemIndex}
-                        className="text-sm md:text-base text-foreground/70 flex items-start"
+                        className="text-sm md:text-base text-black/70 flex items-start"
                       >
                         <span className="mr-3 text-blue-500 font-bold">•</span>
                         <span>{item}</span>

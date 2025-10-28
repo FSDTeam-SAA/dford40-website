@@ -105,7 +105,7 @@ export default function AboutUs() {
         />
       </div>
       <div className="w-full py-8 bg-white text-center">
-        <h1 className="text-xl font-bold mb-4">
+        <h1 className="text-xl font-bold mb-4 text-black">
           Message us if you are interested in our services or becoming a partner
         </h1>
 
