@@ -44,7 +44,7 @@ export default function Wwo() {
   ];
 
   return (
-    <main className="min-h-screen bg-background">
+    <main className="min-h-screen bg-white">
       {/* What We Offer Section */}
       <section className="w-full py-12 md:py-16 lg:py-20 px-4 md:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
