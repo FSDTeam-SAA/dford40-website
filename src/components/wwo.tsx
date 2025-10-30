@@ -44,7 +44,7 @@ export default function Wwo() {
   ];
 
   return (
-    <main className="min-h-screen bg-white">
+    <main id="services" className="min-h-screen bg-white pt-6">
       {/* What We Offer Section */}
       <section className="w-full py-12 md:py-16 lg:py-20 px-4 md:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
@@ -54,7 +54,7 @@ export default function Wwo() {
               What We Offer
             </h2>
             <div className="flex justify-center">
-              <div className="h-1 w-24 bg-blue-500"></div>
+              <div className="h-4 w-48 bg-blue-500"></div>
             </div>
           </div>
 

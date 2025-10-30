@@ -6,27 +6,15 @@ import React from "react";
 const HeroSection: React.FC = () => {
   return (
     <section className="relative h-[60vh] w-full flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      {/* <div className="absolute inset-0 -z-10">
-        <Image 
-          src="/hero1.jpg" // replace with your background image path
-          alt="City Buildings"
-          fill
-          className="object-cover object-center brightness-75"
-          priority
-        />
-      </div> */}
-
-      <div className="absolute inset-0 -z-10">
+      {/* Background Image with Slow Zoom Animation */}
+      <div className="absolute inset-0 -z-10 overflow-hidden">
         <Image
           src="/hero1.jpg"
           alt="City Buildings"
           fill
-          className="object-cover object-center"
+          className="object-cover object-center brightness-75 animate-zoom"
           priority
         />
-
-        {/* black overlay */}
         <div className="absolute inset-0 bg-black/60"></div>
       </div>
 

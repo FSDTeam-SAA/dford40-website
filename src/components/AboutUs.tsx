@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function AboutUs() {
   return (
-    <main className="min-h-screen bg-[#F1F1F1]">
+    <main id="about" className="min-h-screen bg-[#F1F1F1] pt-6">
       {/* Header Section */}
       <section className="w-full pt-20 ">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
@@ -12,7 +12,7 @@ export default function AboutUs() {
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               About Us
             </h1>
-            <div className="h-4 w-24 bg-blue-500 mx-auto"></div>
+            <div className="h-4 w-32 bg-blue-500 mx-auto"></div>
           </div>
         </div>
       </section>
