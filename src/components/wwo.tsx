@@ -63,14 +63,18 @@ export default function Wwo() {
             {services.map((service, index) => (
               <div key={index} className="flex flex-col">
                 {/* Image Container */}
-                <div className="relative w-full h-48 md:h-56 lg:h-64 mb-6 overflow-hidden rounded-lg">
-                  <Image
-                    src={service.image || "/placeholder.svg"}
-                    alt={service.title}
-                    fill
-                    className="object-cover w-full h-full"
-                  />
-                </div>
+            
+
+
+                <div className="relative w-full h-48 md:h-56 lg:h-64 mb-6 overflow-hidden rounded-lg group">
+  <Image
+    src={service.image || "/placeholder.svg"}
+    alt={service.title}
+    fill
+    className="object-cover w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-110"
+  />
+</div>
+
 
                 {/* Content Container */}
                 <div className="flex flex-col flex-grow">
