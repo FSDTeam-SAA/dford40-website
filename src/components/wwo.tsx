@@ -4,7 +4,7 @@ export default function Wwo() {
   const services = [
     {
       title: "Engineering",
-      image: "/wwo1.jpg",
+      image: "/eng.jpg",
       description:
         "Our seasoned team of engineers meticulously plan and design Outside Plant infrastructure, ensuring optimal performance and future scalability. From initial assessments to comprehensive blueprints, we lay the groundwork for seamless telecommunication networks.",
       items: [
@@ -17,7 +17,7 @@ export default function Wwo() {
     },
     {
       title: "Field Services",
-      image: "/wwo2.jpg",
+      image: "/fld.jpg",
       description:
         "We are experts in deploying Field Service Resources. Our field teams bring unmatched expertise to the installation of network infrastructure equipment. Whether deploying fiber optic cables or advanced communication nodes, our team executes with quality and efficiency.",
       items: [
@@ -31,7 +31,7 @@ export default function Wwo() {
     },
     {
       title: "Workforce Solutions",
-      image: "/wwo3.jpg",
+      image: "/wrk.jpg",
       description:
         "We understand that a skilled and reliable workforce is the backbone of any telecommunications project, and having access to a flexible talent pool is key the success. Our Workforce Solutions are tailored to meet the needs of the most challenging telecommunications projects.",
       items: [
@@ -63,14 +63,18 @@ export default function Wwo() {
             {services.map((service, index) => (
               <div key={index} className="flex flex-col">
                 {/* Image Container */}
-                <div className="relative w-full h-48 md:h-56 lg:h-64 mb-6 overflow-hidden rounded-lg">
-                  <Image
-                    src={service.image || "/placeholder.svg"}
-                    alt={service.title}
-                    fill
-                    className="object-cover w-full h-full"
-                  />
-                </div>
+            
+
+
+                <div className="relative w-full h-48 md:h-56 lg:h-64 mb-6 overflow-hidden rounded-lg group">
+  <Image
+    src={service.image || "/placeholder.svg"}
+    alt={service.title}
+    fill
+    className="object-cover w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-110"
+  />
+</div>
+
 
                 {/* Content Container */}
                 <div className="flex flex-col flex-grow">
